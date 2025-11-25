@@ -35,15 +35,13 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-3">
                         <div className="w-11 h-11 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #E63946 0%, #F77F00 50%, #FCBF49 100%)' }}>
-                            <span className="text-white font-bold text-xl">WB</span>
+                            <span className="text-white font-bold text-xl">WM</span>
                         </div>
                         <div className="flex flex-col leading-tight">
                             <span className="font-bold text-xl text-[#E63946]">
-                                weddingbazaar
+                                WeddingMall
                             </span>
-                            <span className="text-[10px] text-[#8D99AE]">
-                                from Matrimony.com group
-                            </span>
+
                         </div>
                     </Link>
 
