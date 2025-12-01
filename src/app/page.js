@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import VendorCategories from '@/components/VendorCategories';
 import WhyWeddingMall from '@/components/WhyWeddingMall';
+import HelpWithDetails from '@/components/HelpWithDetails';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <VendorCategories />
       <WhyWeddingMall />
+      <HelpWithDetails />
     </main>
   );
 }

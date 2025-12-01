@@ -10,29 +10,50 @@ const WhyWeddingMall = () => {
     const features = [
         {
             id: 1,
-            icon: '💍',
-            iconBg: '#FFE5E5',
+            iconSvg: (
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12L28 20H20L24 12Z" fill="#E63946" />
+                    <path d="M20 20H28L32 28H16L20 20Z" fill="#E63946" />
+                    <path d="M16 28H32L28 36H20L16 28Z" fill="#E63946" />
+                </svg>
+            ),
             cardBg: '#FFF5F5',
             title: 'Trusted marketplace from Matrimony.com group',
         },
         {
             id: 2,
-            icon: '📍',
-            iconBg: '#E0F7FA',
+            iconSvg: (
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="18" r="4" fill="#0288D1" />
+                    <circle cx="24" cy="12" r="3" fill="#0288D1" />
+                    <circle cx="32" cy="18" r="4" fill="#0288D1" />
+                    <path d="M12 30C12 26 16 24 24 24C32 24 36 26 36 30V36H12V30Z" fill="#0288D1" />
+                </svg>
+            ),
             cardBg: '#F0FEFF',
             title: '2.8 Lakh+ trusted vendors across 40+ cities',
         },
         {
             id: 3,
-            icon: '💑',
-            iconBg: '#F3E5F5',
+            iconSvg: (
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="16" r="5" fill="#7C3AED" />
+                    <circle cx="30" cy="16" r="5" fill="#7C3AED" />
+                    <path d="M14 28C14 24 17 22 24 22C31 22 34 24 34 28V34H14V28Z" fill="#7C3AED" />
+                </svg>
+            ),
             cardBg: '#FAF5FF',
             title: '2.3 million connections with 60K+ vendors',
         },
         {
             id: 4,
-            icon: '😊',
-            iconBg: '#E3F2FD',
+            iconSvg: (
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="18" r="6" fill="#9CA3AF" />
+                    <path d="M12 32C12 27 17 25 24 25C31 25 36 27 36 32V38H12V32Z" fill="#9CA3AF" />
+                    <circle cx="28" cy="34" r="4" fill="#9CA3AF" />
+                </svg>
+            ),
             cardBg: '#F0F7FF',
             title: '20 Lakh+ and counting happy customers',
         },
@@ -62,11 +83,11 @@ const WhyWeddingMall = () => {
     };
 
     return (
-        <section className="py-16 px-[5%] bg-white relative flex justify-center" style={{ paddingTop: '10px', paddingBottom: '10px' }}>
-            <div className="max-w-7xl mx-auto" style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+        <section className="py-16 px-[5%] bg-white relative flex justify-center">
+            <div className="max-w-7xl mx-auto w-full">
                 {/* Title */}
                 <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
-                    Why WeddingMall?
+                    Why WeddingBazaar?
                 </h2>
 
                 {/* Navigation Arrows */}
@@ -74,7 +95,7 @@ const WhyWeddingMall = () => {
                 <button
                     onClick={() => scroll('left')}
                     disabled={!showLeftArrow}
-                    className="absolute left-60 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white shadow-lg hover:shadow-xl flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed z-10"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white shadow-md hover:shadow-lg flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
                     aria-label="Previous features"
                 >
                     <svg
@@ -86,7 +107,7 @@ const WhyWeddingMall = () => {
                     >
                         <path
                             d="M12.5 15L7.5 10L12.5 5"
-                            stroke="#333"
+                            stroke="#666"
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -98,7 +119,7 @@ const WhyWeddingMall = () => {
                 <button
                     onClick={() => scroll('right')}
                     disabled={!showRightArrow}
-                    className="absolute right-60 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-gray-900 shadow-lg hover:shadow-xl flex items-center justify-center transition-all disabled:opacity-30 disabled:cursor-not-allowed z-10"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-gray-800 shadow-md hover:shadow-lg flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
                     aria-label="Next features"
                 >
                     <svg
@@ -119,7 +140,7 @@ const WhyWeddingMall = () => {
                 </button>
 
                 {/* Scrollable Container */}
-                <div className="relative px-8" style={{ paddingTop: '10px', paddingBottom: '10px', paddingLeft: '10px', paddingRight: '10px' }}>
+                <div className="relative px-8">
                     <div
                         ref={scrollContainerRef}
                         onScroll={handleScroll}
@@ -127,30 +148,22 @@ const WhyWeddingMall = () => {
                         style={{
                             scrollbarWidth: 'none',
                             msOverflowStyle: 'none',
-                            paddingTop: '10px',
-                            paddingBottom: '10px',
-                            paddingLeft: '10px',
-                            paddingRight: '10px',
                         }}
                     >
-                        <div className="flex gap-6 pb-4" style={{ paddingTop: '10px', paddingBottom: '10px', paddingLeft: '10px', paddingRight: '10px' }}>
+                        <div className="flex gap-6 pb-4">
                             {features.map((feature) => (
                                 <div
                                     key={feature.id}
-                                    className="w-[220px] h-[200px] rounded-2xl p-8 transition-all duration-300 hover:shadow-lg flex-shrink-0"
-                                    style={{ paddingTop: '10px', paddingBottom: '10px', paddingLeft: '10px', paddingRight: '10px', backgroundColor: feature.cardBg }}
-
+                                    className="w-[280px] rounded-2xl p-8 transition-all duration-300 hover:shadow-lg shrink-0"
+                                    style={{ backgroundColor: feature.cardBg }}
                                 >
                                     {/* Icon */}
-                                    <div
-                                        className="w-16 h-16 rounded-xl flex items-center justify-center text-3xl mb-6"
-                                        style={{ backgroundColor: feature.iconBg }}
-                                    >
-                                        {feature.icon}
+                                    <div className="flex items-center justify-center mb-6">
+                                        {feature.iconSvg}
                                     </div>
 
                                     {/* Title */}
-                                    <h3 className="text-xl font-semibold text-gray-900 leading-relaxed">
+                                    <h3 className="text-lg font-semibold text-gray-900 leading-relaxed">
                                         {feature.title}
                                     </h3>
                                 </div>
