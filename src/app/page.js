@@ -3,6 +3,8 @@ import Hero from '@/components/Hero';
 import VendorCategories from '@/components/VendorCategories';
 import WhyWeddingMall from '@/components/WhyWeddingMall';
 import HelpWithDetails from '@/components/HelpWithDetails';
+import BlogSection from '@/components/BlogSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <VendorCategories />
       <WhyWeddingMall />
       <HelpWithDetails />
+      <BlogSection />
+      <TestimonialsSection />
     </main>
   );
 }
