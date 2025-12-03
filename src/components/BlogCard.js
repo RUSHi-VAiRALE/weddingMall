@@ -7,7 +7,7 @@ import Link from 'next/link';
 const BlogCard = ({ images, title, category, date, href }) => {
   return (
     <Link href={href} className="group">
-      <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+      <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 border border-[#FFE5D9]">
         {/* Image Gallery */}
         <div className="relative h-48 bg-gray-100">
           <div className="grid grid-cols-3 gap-1 h-full p-2">
@@ -26,12 +26,12 @@ const BlogCard = ({ images, title, category, date, href }) => {
           
           {/* Navigation Arrows */}
           <button
-            className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#FFE5D9]"
             aria-label="Previous"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-gray-700"
+              className="h-4 w-4 text-[#E63946]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -43,12 +43,12 @@ const BlogCard = ({ images, title, category, date, href }) => {
             </svg>
           </button>
           <button
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-[#FFE5D9]"
             aria-label="Next"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 text-gray-700"
+              className="h-4 w-4 text-[#E63946]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -63,14 +63,14 @@ const BlogCard = ({ images, title, category, date, href }) => {
 
         {/* Content */}
         <div className="p-4">
-          <h3 className="text-base font-semibold text-gray-900 mb-3 line-clamp-2 group-hover:text-[#E63946] transition-colors">
+          <h3 className="text-base font-semibold text-[#2B2D42] mb-3 line-clamp-2 group-hover:text-[#E63946] transition-colors">
             {title}
           </h3>
           <div className="flex flex-col gap-1">
-            <p className="text-xs font-semibold text-gray-900 uppercase tracking-wide">
+            <p className="text-xs font-semibold text-[#E63946] uppercase tracking-wide">
               {category}
             </p>
-            <p className="text-xs text-gray-500">{date}</p>
+            <p className="text-xs text-[#8D99AE]">{date}</p>
           </div>
         </div>
       </div>

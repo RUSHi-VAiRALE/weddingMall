@@ -99,11 +99,11 @@ const VendorCategories = () => {
   };
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-[#FFF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Navigation */}
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">Vendor categories</h2>
+          <h2 className="text-3xl font-bold text-[#2B2D42]">Vendor categories</h2>
 
           {/* Navigation Buttons */}
           <div className="flex items-center gap-2">
@@ -112,8 +112,8 @@ const VendorCategories = () => {
               disabled={isFirstPage}
               aria-label="Previous page"
               className={`inline-flex items-center justify-center w-10 h-10 rounded-full border transition-all ${isFirstPage
-                ? 'bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed'
-                : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400'
+                ? 'bg-[#FFE5D9] border-[#FFE5D9] text-[#8D99AE] cursor-not-allowed'
+                : 'bg-white border-[#FFE5D9] text-[#E63946] hover:bg-[#FFE5D9] hover:border-[#E63946]'
                 }`}
             >
               <svg
@@ -135,8 +135,8 @@ const VendorCategories = () => {
               disabled={isLastPage}
               aria-label="Next page"
               className={`inline-flex items-center justify-center w-10 h-10 rounded-full border transition-all ${isLastPage
-                ? 'bg-gray-100 border-gray-200 text-gray-400 cursor-not-allowed'
-                : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400'
+                ? 'bg-[#FFE5D9] border-[#FFE5D9] text-[#8D99AE] cursor-not-allowed'
+                : 'bg-white border-[#FFE5D9] text-[#E63946] hover:bg-[#FFE5D9] hover:border-[#E63946]'
                 }`}
             >
               <svg

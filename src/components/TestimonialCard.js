@@ -4,7 +4,7 @@ import React from 'react';
 
 const TestimonialCard = ({ quote, name, service, location }) => {
   return (
-    <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 h-full flex flex-col">
+    <div className="bg-[#FFF8F0] rounded-xl p-6 shadow-sm border border-[#FFE5D9] h-full flex flex-col hover:shadow-lg transition-all duration-300">
       {/* Quote Icon */}
       <div className="mb-4">
         <svg
@@ -18,14 +18,14 @@ const TestimonialCard = ({ quote, name, service, location }) => {
       </div>
 
       {/* Testimonial Text */}
-      <p className="text-gray-700 text-sm leading-relaxed mb-6 flex-grow">
+      <p className="text-[#2B2D42] text-sm leading-relaxed mb-6 flex-grow">
         {quote}
       </p>
 
       {/* Author Info */}
-      <div className="border-t border-gray-100 pt-4">
-        <h4 className="font-semibold text-gray-900 text-base mb-1">{name}</h4>
-        <p className="text-sm text-gray-600">
+      <div className="border-t border-[#FFE5D9] pt-4">
+        <h4 className="font-semibold text-[#2B2D42] text-base mb-1">{name}</h4>
+        <p className="text-sm text-[#8D99AE]">
           {service}, {location}
         </p>
       </div>

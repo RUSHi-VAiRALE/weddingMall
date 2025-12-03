@@ -86,8 +86,8 @@ const WhyWeddingMall = () => {
         <section className="py-16 px-[5%] bg-white relative flex justify-center">
             <div className="max-w-7xl mx-auto w-full">
                 {/* Title */}
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
-                    Why WeddingBazaar?
+                <h2 className="text-4xl md:text-5xl font-bold text-[#2B2D42] mb-12">
+                    Why WeddingMall?
                 </h2>
 
                 {/* Navigation Arrows */}
@@ -119,7 +119,10 @@ const WhyWeddingMall = () => {
                 <button
                     onClick={() => scroll('right')}
                     disabled={!showRightArrow}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-gray-800 shadow-md hover:shadow-lg flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full shadow-md hover:shadow-lg flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed z-10"
+                    style={{
+                        background: showRightArrow ? 'linear-gradient(135deg, #E63946, #F77F00)' : '#FFE5D9'
+                    }}
                     aria-label="Next features"
                 >
                     <svg
@@ -163,7 +166,7 @@ const WhyWeddingMall = () => {
                                     </div>
 
                                     {/* Title */}
-                                    <h3 className="text-lg font-semibold text-gray-900 leading-relaxed">
+                                    <h3 className="text-lg font-semibold text-[#2B2D42] leading-relaxed">
                                         {feature.title}
                                     </h3>
                                 </div>

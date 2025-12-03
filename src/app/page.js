@@ -5,6 +5,7 @@ import WhyWeddingMall from '@/components/WhyWeddingMall';
 import HelpWithDetails from '@/components/HelpWithDetails';
 import BlogSection from '@/components/BlogSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HelpWithDetails />
       <BlogSection />
       <TestimonialsSection />
+      <Footer />
     </main>
   );
 }

@@ -39,7 +39,7 @@ export default function Navbar() {
                         </div>
                         <div className="flex flex-col leading-tight">
                             <span className="font-bold text-xl text-[#E63946]">
-                                WeddingMall
+                                WeddingMall.Online
                             </span>
 
                         </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
                             onMouseLeave={() => setIsVendorsOpen(false)}
                         >
                             <button
-                                className="flex items-center space-x-1 h-16 font-normal text-[15px] transition-colors text-[#2B2D42] hover:text-[#E63946]"
+                                className="flex items-center space-x-1 h-16 font-bold text-[15px] transition-colors text-[#2B2D42] hover:text-[#E63946]"
                             >
                                 <span>Vendors</span>
                                 <svg
@@ -101,12 +101,12 @@ export default function Navbar() {
 
                         <Link
                             href="/blog"
-                            className="font-normal text-[15px] transition-colors hover:text-[#E63946] text-[#2B2D42]"
+                            className="font-bold text-[15px] transition-colors hover:text-[#E63946] text-[#2B2D42]"
                         >
                             Blog
                         </Link>
 
-                        <button className="flex items-center space-x-1.5 font-normal text-[15px] transition-colors hover:text-[#E63946] text-[#2B2D42]">
+                        <button className="flex items-center space-x-1.5 font-bold text-[15px] transition-colors hover:text-[#E63946] text-[#2B2D42]">
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                             </svg>
@@ -115,14 +115,14 @@ export default function Navbar() {
 
                         <Link
                             href="/login"
-                            className="font-normal text-[15px] transition-colors hover:text-[#E63946] text-[#2B2D42]"
+                            className="font-bold text-[15px] transition-colors hover:text-[#E63946] text-[#2B2D42]"
                         >
                             Login
                         </Link>
 
                         <Link
                             href="/vendor/register"
-                            className="px-5 py-2 rounded-full text-[14px] font-medium hover:text-[#E63946] text-[#2B2D42] transition-all hover:shadow-md"
+                            className="px-5 py-2 rounded-full text-[14px] font-bold hover:text-[#E63946] text-[#2B2D42] transition-all hover:shadow-md"
                         >
                             Are you a vendor?
                         </Link>
