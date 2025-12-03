@@ -213,7 +213,7 @@ const Footer = () => {
             </svg>
             <span className="text-[#8D99AE]">by</span>
             <a
-              href="https://demanddigital.in"
+              href="https://www.blinks-ai.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold bg-gradient-to-r from-[#E63946] to-[#F77F00] bg-clip-text text-transparent hover:from-[#D62828] hover:to-[#E63946] transition-all"
