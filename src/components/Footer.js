@@ -192,7 +192,7 @@ const Footer = () => {
           <div className="text-[#8D99AE] text-sm text-center md:text-left">
             <p>© {new Date().getFullYear()} WeddingMall. All rights reserved.</p>
             <p className="mt-1">
-              Part of{' '}
+              Powered by{' '}
               <span className="text-[#E63946] font-semibold">Demanddigital.in Group</span>
             </p>
           </div>

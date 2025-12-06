@@ -18,7 +18,7 @@ const WhyWeddingMall = () => {
                 </svg>
             ),
             cardBg: '#FFF5F5',
-            title: 'Trusted marketplace from Matrimony.com group',
+            title: 'Trusted marketplace from Demanddigital.in group',
         },
         {
             id: 2,
